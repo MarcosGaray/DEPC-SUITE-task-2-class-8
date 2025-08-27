@@ -1,0 +1,153 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root{
+    --neutral--0: #fff;
+    --neutral--600: #1d1e20; 
+    --neutral--400: #6d7081;
+    --primary--500: #673de6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    position: sticky;
+    top:0;
+    left: 0;
+    background-color: var(--neutral--0);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+}
+
+.header__logo-container {
+    padding: 29px 0 29px 40px;
+}
+
+.header__logo-container svg{
+    cursor: pointer;
+}
+
+.header__menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.header__menu__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+}
+
+.header__menu__nav__item {
+    color: var(--neutral--600);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+}
+
+.header__menu__nav__item:hover {
+    color: var(--neutral--400);
+}
+
+.header__menu__nav__item__icon-container {
+    width: 24px;
+    height: 24px;
+
+}
+
+.header__menu__right-section {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    gap: 30px;
+    height: 48px;
+}
+
+.header__menu__right-section__lang-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: inherit;
+    font-size: inherit;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header__menu__right-section__lang-btn:hover {
+    color: var(--neutral--400);
+}
+
+.header__menu__right-section__lang-btn img {
+    width: 32px;
+    height: 20px;
+}
+
+.primary-btn {
+    background-color: transparent;
+    border: 1px solid #161718;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background-color: transparent;
+    border: 1px solid #d8dae0;
+    border-radius: 8px;
+    color: var(--neutral--400)
+}
+
+.header__menu__right-section__account-btn {
+    font-weight: inherit;
+    padding: 11px 15px;
+    font-size: inherit;
+}
+
+main {
+    height: 200vh;
+}
+
+.ask-kodee-btn {
+    background-color: var(--primary--500);
+    color: var(--neutral--0);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    position: fixed;
+    right: 12px;
+    bottom: 12px;
+    padding: 8px 16px 8px 8px;
+    border: none;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.ask-kodee-btn__icon-container {
+    /*  padding: 3px 5px; */
+    padding-left: 5px;
+}
