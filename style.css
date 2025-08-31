@@ -15,7 +15,7 @@
     font-family: "DM Sans", sans-serif;
 }
 
-.header{
+.header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -150,4 +150,10 @@ main {
 .ask-kodee-btn__icon-container {
     /*  padding: 3px 5px; */
     padding-left: 5px;
+}
+
+@media screen and (max-width: 1050px) {
+    .header__menu {
+        display: none;
+    }
 }
